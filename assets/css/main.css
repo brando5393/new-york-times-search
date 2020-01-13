@@ -1,0 +1,39 @@
+body {
+    font-family: 'News Cycle', sans-serif;
+    background-image: url(https://www.slc.gov/hr/wp-content/uploads/sites/23/2019/10/Branded-Footer-1024x256.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.jumbotron {
+    text-align: center;
+    background-image: url(http://stratemeyer.org/wp-content/uploads/2015/05/40-1942-Keene-Clue_of_the_Rusty_Key-electrotype_printing_plate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.card-header,
+#about-heading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.my-4{
+    color: white;
+}
