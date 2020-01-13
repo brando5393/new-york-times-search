@@ -1,22 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times Search</title>
+    <!-- ===CSS LINKS=== -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- ===FONTS=== -->
+    <!-- ===JS LINKS=== -->
+    <!-- bootstrap -->
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- jquery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- app js -->
+    <script defer src="assets/javascript/app.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
-
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron">
+                        <h1 class="display-4">📰New York Times Search📰</h1>
+                        <p class="lead">Aspernatur eum dolores dolorem atque dolor consequatur.</p>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
-            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <h5 class="card-header">Search the New York Times</h5>
+                        <div class="card-body">
+                            <p class="card-text">Use this area to search for NYT articles.</p>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="search-box">Search Term:</label>
+                                    <input type="text" class="form-control" id="search-box" placeholder="stock market" required> 
+                                </div>
+                                <div class="form-group">
+                                    <label for="total-articles-to-find">How many results would you like?</label>
+                                    <select class="form-control" id="total-articles-to-find" required>
+                                        <option value="1">1</option>
+                                        <option value="5" selected>5</option>
+                                        <option value="10">10</option>
+                                      </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="start-year">Start Year (Optional):</label>
+                                    <input type="text" class="form-control" id="start-year" placeholder="2010"> 
+                                </div>
+                                <div class="form-group">
+                                    <label for="end-year">End Year (Optional):</label>
+                                    <input type="text" class="form-control" id="end-year" placeholder="2020"> 
+                                </div>
+                                <button type="submit" class="btn btn-info btn-lg btn-block">🔎Search for Articles</button>
+                                <button type="reset" class="btn btn-secondary btn-lg btn-block">Reset All Fields</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <section id="about-this-app">
+                        <h5 id="about-heading">About This Application</h5>
+                        <div class="alert alert-info" role="alert">
+                            Quo quia libero laudantium aperiam perspiciatis sit. Placeat laborum minus excepturi accusantium non ut. Sed consequatur voluptatibus consequatur id dolorem pariatur aliquid. Ratione quia soluta sequi necessitatibus sed aperiam repellat officiis. Omnis odio hic tempore iure quia.
+                            Amet porro nihil necessitatibus ea totam totam sequi. Quidem ad debitis voluptate nihil expedita porro omnis sapiente. Distinctio architecto rem similique molestiae. Illo quibusdam explicabo voluptate non blanditiis porro sapiente sunt. Adipisci adipisci accusantium ut autem dolorum voluptas rerum nulla. Ipsa aut porro unde id.
+                            Sapiente laudantium aperiam doloremque. Nihil aut officia quae ipsa rem praesentium quasi velit soluta. Porro voluptas ipsam perferendis suscipit delectus repellat nam unde laudantium. Repellendus esse veniam fugit autem.
+                            Sapiente laudantium aperiam doloremque. Nihil aut officia quae ipsa rem praesentium quasi velit soluta. Porro voluptas ipsam perferendis suscipit delectus repellat nam unde laudantium. Repellendus esse veniam fugit autem.
+                            Sapiente laudantium aperiam doloremque. Nihil aut officia quae ipsa rem praesentium quasi velit soluta. Porro voluptas ipsam perferendis suscipit delectus repellat nam unde laudantium. Repellendus esse veniam fugit autem.
+                          </div>
+                    </section>
+                </div>
+            </div>
         </main>
         <footer>
-            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card" id="results-card">
+                        <h5 class="card-header">Your Articles</h5>
+                        <div class="card-body">
+                            <div id="results">
+
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
+
 </html>
